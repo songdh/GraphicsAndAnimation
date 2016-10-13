@@ -38,6 +38,8 @@
     
     [UIView setAnimationDuration:3.0f];
     [UIView setAnimationDelegate:self];
+    [UIView setAnimationBeginsFromCurrentState:YES];
+    [UIView setAnimationRepeatCount:MAXFLOAT];
     [UIView setAnimationDidStopSelector:@selector(imageViewDidStop:finished:context:)];
     [self.imageView setCenter:CGPointMake(screenWidth-CGRectGetWidth(_imageView.frame)/2,
                                           screenHeight-64-CGRectGetHeight(_imageView.frame)/2)];
